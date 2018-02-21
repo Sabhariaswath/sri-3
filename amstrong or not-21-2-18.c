@@ -2,7 +2,7 @@
 #include<math.h>
 int main()
 {
-   int n=0,num,sum=0,rem=0,count=0,n1;
+   int n=0,num,sum=0,a=0,count=0,n1;
    scanf("%d",&num);
    n1=n=num;
    while(n!=0)
@@ -12,8 +12,8 @@ int main()
    }
    while(n1!=0)
    {
-       rem=n1%10;
-       sum=sum+pow(rem,count);
+       a=n1%10;
+       sum=sum+pow(a,count);
        n1=n1/10;
    }
    if(sum==num)
